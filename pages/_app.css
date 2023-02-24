@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Noto+Sans&family=Open+Sans&family=PT+Sans+Caption&family=Roboto&display=swap');
+
+:root {
+    --cor0: #1f0a1d;
+    --cor1: #334f53;
+    --cor2: #45936c;
+    --cor3: #9acc77;
+    --cor4: #e5ead4;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontTitulo: 'Roboto', sans-serif;
+    --fontSubTitulo: 'PT Sans Caption', sans-serif;
+    --fontTxt: 'Open Sans', sans-serif;
+    --fontLink: 'Noto Sans', sans-serif;
+    --fontMenu: 'Concert One', cursive;
+
+}
