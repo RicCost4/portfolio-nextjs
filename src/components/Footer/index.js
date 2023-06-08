@@ -1,6 +1,7 @@
 import Link from "next/link";
 import index from "../../../pages/api/json-arquivos/api_index.json";
 import link from "../../../pages/api/json-arquivos/api_contato.json"
+import packageJson from '../../../package.json';
 import styled from "styled-components"
 
 const StyleFooter = styled.footer`
@@ -40,10 +41,13 @@ function Footer(){
     let ano = new Date()
     let year = ano.getFullYear()
 
+    const versionList = packageJson.version.split('.')
+    const formatarVersion = versionList.slice(0, 2).join('.')
+
     return(
         <StyleFooter>
             <p>
-                Esse site foi criado pelo <Link href={github.link[1].url} target={"_blank"}>@{textos.perfil.nome}</Link> como consolidação dos estudos e apresentação profissional, 2022 - {year} versão 2.0
+                Esse site foi criado pelo <Link href={github.link[1].url} target={"_blank"}>@{textos.perfil.nome}</Link> como consolidação dos estudos e apresentação profissional, 2022 - {year} versão {formatarVersion}
             </p>
         </StyleFooter>
     )

@@ -1,6 +1,11 @@
 import conhecimento from "../../../../pages/api/json-arquivos/api_carreira.json";
 import Image from "next/image";
 import React from "react";
+import styled from "styled-components"
+
+const StyleLi = styled.li`
+    margin-bottom: 7px;
+`
 
 function Conhecimentos(){
     const [listaConhecimento, setlistaConhecimento] = React.useState([])
@@ -8,20 +13,21 @@ function Conhecimentos(){
     const [img, setImg] = React.useState([])
 
     React.useEffect(() =>{
-        function conhecimentoLista(){
-            setlistaConhecimento(conhecimento.lista)
-        }
-        function conhecimentoCursos(){
-            setCursos(conhecimento.cursos)
-        }
-        function conhecimentoImg(){
-            setImg(conhecimento.imgUrl)
-        }
 
         conhecimentoLista()
         conhecimentoCursos()
         conhecimentoImg()
     }, [])
+
+    function conhecimentoLista(){
+        setlistaConhecimento(conhecimento.lista)
+    }
+    function conhecimentoCursos(){
+        setCursos(conhecimento.cursos)
+    }
+    function conhecimentoImg(){
+        setImg(conhecimento.imgUrl)
+    }
 
     return(
         <section>
@@ -31,7 +37,7 @@ function Conhecimentos(){
                 <ul>
                     {listaConhecimento.map((e) => {
                             return (
-                                <li key={e.id}>{e.linguagens}</li>
+                                <StyleLi key={e.id}>{e.linguagens}</StyleLi>
                             )
                         })
                     }

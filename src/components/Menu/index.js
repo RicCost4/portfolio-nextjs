@@ -2,8 +2,9 @@ import Link from "next/link"
 import styled from "styled-components"
 
 const StyleMenu = styled.nav`
-    background-color: var(--cor2);
     font-family: var(--fontMenu);
+    min-width: 300px;
+    max-width: 1000px;
     margin: auto;
     padding: 0 20px;
     justify-content: space-between;
@@ -86,9 +87,13 @@ const StyleMenu = styled.nav`
             margin: 10px;
         }
     
-        .lista,
         .menu {
             width: 100%;
+            align-items: center;
+        }
+
+        .lista{
+            width: 50%;
         }
     
         .menu {

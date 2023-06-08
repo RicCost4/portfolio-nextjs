@@ -15,7 +15,7 @@ function QuemSou(){
             
             <h1>Quem Sou!</h1>
             <div className="perfil">
-                <Image src={captura.img.perfil2} height={300} width={300} alt="Foto de Perfil" className="perfilImg" />
+                <Image src={captura.img.perfil2} alt="Chad" width={300} height={300} className="perfilImg" />
                 <div className="perfilTxt">
                     <p>
                         {captura.quemsou.p1}

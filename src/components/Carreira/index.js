@@ -22,11 +22,14 @@ const StyleCarreira = styled.main`
 
     .tabela,
     .SofImg{
-        text-align: center;
         margin: auto;
         display: block;
         max-width: 500px;
         min-width: 250px;
+    }
+    
+    .SofImg{
+        text-align: center;
     }
 
     .tabela{
@@ -35,6 +38,7 @@ const StyleCarreira = styled.main`
         padding: 10px;
         border-radius: 10px;
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+        text-align: left;
     }
 
     .tabela h3{

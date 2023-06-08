@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Menu from "../Menu"
 
 const StyleHeader = styled.header`
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
@@ -33,6 +34,7 @@ function Header(){
         <StyleHeader>
             <h1>Richard Artur Rodrigues Costa</h1>
             <p>Meu Portfólio</p>
+            <Menu />
         </StyleHeader>
     )
 }
