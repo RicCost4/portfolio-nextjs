@@ -1,0 +1,37 @@
+.section{
+    margin: auto;
+    padding: 20px 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.a {
+    background-color: var(--cor3);
+    color: var(--cor1);
+    width: 250px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    transition-duration: 1s;
+}
+
+.a:hover {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor3), var(--cor4));
+    color: var(--cor0);
+}
+
+.a img {
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.a span{
+    margin: 0 10px;
+}

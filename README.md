@@ -1,5 +1,5 @@
 # portfolio2.0
-versão do meu portfolio em Nextjs
+versão do meu portfolio em Nextjs na versão 13.4.4
 
 # Instalar projeto Nextjs-Reactjs
 
